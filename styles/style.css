@@ -1,1 +1,41 @@
-/* место для вашего кода */
+body { /* отладка*/
+  height: 2160px;
+}
+
+.header {
+  width: 1052px;
+  margin: 92px 24px 96px;
+  display: grid;
+  grid-template-columns: 454px 148px 450px;
+  grid-template-rows: 105px;
+  align-items: flex-start;
+  justify-items: left;
+/*  background-color:gray; */
+}
+
+.header__menu {
+  margin-top: 0px;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 44px;
+  margin-left: 27px;
+  list-style: circle outside;
+}
+
+.header__menu-item {
+  margin-right: 1.73em;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header__menu-item_active:focus {
+  border-bottom: none;
+}
