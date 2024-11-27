@@ -58,14 +58,38 @@ body { /* отладка - удалить*/
 
 /* --------------------- header__address --------------------- */
 
-
 .header__address {
-  grid-column-start: 3;
-  /*grid-column-end: 4;*/
-  grid-row-start: 1;
-  /*grid-row-end: 2;*/
-  background: #14e90d;
+  grid-column: 3/4;
+  grid-row-start: 1/2;
+  justify-self: left;
+  align-self: center;
+  width: 240.52px;
+  margin-left: 76px;
+  font-size: 18px;
+  font-weight: 400;  
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
+
+.header_address-tel {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header_address-email {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+/*
+.header_address-office {
+
+}
+*/
+
 
 
 /*---------------------------------------------------------------------------*/
