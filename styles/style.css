@@ -23,11 +23,15 @@ body { /* отладка - удалить*/
   display: flex;
   flex-direction: row;
   margin-left: 50px;
-  list-style: circle outside;
 }
 
 .header__menu-item {
+  list-style: circle outside;
   margin-right: 1.73em;
+}
+
+.header__menu-item_active:focus-within, :hover {
+  list-style-type: none;
 }
 
 .header__menu-link {
@@ -35,11 +39,12 @@ body { /* отладка - удалить*/
   border-bottom: 1px solid black;
 }
 
-.header__menu-item_active:focus {
+.header__menu-link_active:focus, :hover {
   border-bottom: none;
 }
 
 /* --------------------- header__logo --------------------- */
+
 .header__logo {
   grid-column: 2/3;
   grid-row: 1/2;
