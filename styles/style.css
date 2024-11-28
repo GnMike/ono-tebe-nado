@@ -95,67 +95,24 @@ body { /* отладка - удалить*/
 }
 */
 
+/* --------------------- main ----------------------------- */
 
-
-/*---------------------------------------------------------------------------*/
-/*
-css
-
-.wrapper {
+.main {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
-  grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b"
-    "c c c c d d d d"
-    "c c c c d d d d";
-  align-items: start;
-}
-.item1 {
-  grid-area: a;
-}
-.item2 {
-  grid-area: b;
-}
-.item3 {
-  grid-area: c;
-}
-.item4 {
-  grid-area: d;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 757px;
 }
 
-
-
-html
-
-<div class="wrapper">
-  <div class="item1">Item 1</div>
-  <div class="item2">Item 2</div>
-  <div class="item3">Item 3</div>
-  <div class="item4">Item 4</div>
-</div>
-*/
-
-/*---------------------------------------------------------------------------*/
-
-/*
-
-.address {
-margin-top: 0px;
-margin-left: 185px;
-width: 240.52px;
-font-family: Raleway;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.39em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-font-style: normal;
-letter-spacing: 0.00em;
-align-self: center;
+.main__cover {
+  grid-column: 1/-1;
+  grid-row: 1/2;
 }
 
-*/
+.main__cover-image {
+  min-height: 757px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 124.7%;
+  background-position: -138px 0px;
+}
