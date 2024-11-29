@@ -24,27 +24,27 @@
   letter-spacing: 0.01em; 
 }
 
-.header__menu-list {
+.header__links-list {
   display: flex;
   flex-direction: row;
   margin-left: 51px;
   gap: 1.74em;
 }
 
-.header__menu-item {
+.header__links-list-item {
   list-style: circle outside;  
 }
 
-.header__menu-item_active:focus-within, :hover {
+.header__links-list-item_no-bullit:focus-within, :hover {
   list-style-type: none;
 }
 
-.header__menu-link {
+.header__link {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
 
-.header__menu-link_active:focus, :hover {
+.header__link_active:focus, :hover {
   border-bottom: none;
 }
 
@@ -57,12 +57,6 @@
   align-self: center; 
 }
 
-/*
-.header__logo-link {
-
-}
-*/
-
 .header__logo-image {
   height: 104.65px;
 }
@@ -73,8 +67,11 @@
   grid-row: 1/2;
   justify-self: left;
   align-self: center;
+  padding-left: 76px;
+}
+
+.address {
   width: 240.52px;
-  margin-left: 76px;
   font-size: 18px;
   font-weight: 400;  
   font-style: normal;
@@ -82,21 +79,10 @@
   letter-spacing: 0.01em;
 }
 
-.header_address-tel {
+.address a {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
-
-.header_address-email {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-}
-
-/*
-.header_address-office {
-
-}
-*/
 
 /* --------------------- main ----------------------------- */
 
