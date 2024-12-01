@@ -27,7 +27,7 @@
 .header__links-list {
   display: flex;
   flex-direction: row;
-  margin-left: 51px;
+  margin-left: 50px;
   gap: 1.74em;
 }
 
@@ -61,7 +61,7 @@
   height: 104.65px;
 }
 
-/* --------------------- header__address --------------------- */
+/* --------------------- header__address ------------------ */
 .header__address {
   grid-column: 3/4;
   grid-row: 1/2;
@@ -167,8 +167,42 @@
   letter-spacing: 0;
 }
 
-/*
-cover__description — контейнер для подзаголовка и кнопки;
-cover__description-text — текст подзаголовка;
-bet-button — кнопка «Сделать ставку».
-*/
+.cover__description {
+  position: absolute;
+  z-index: 1;
+  top: 655px;
+  left: 78px;
+  width: 971px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover__description-text {
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 28px; 
+  color: white;
+  word-spacing: 19px;
+}
+
+.whitespace {
+  letter-spacing: -0.1em;
+}
+
+.bet-button {
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.004em;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  box-shadow: none;
+  padding: 11.5px 31px;
+}
