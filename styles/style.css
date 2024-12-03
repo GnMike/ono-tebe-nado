@@ -1,7 +1,7 @@
 .body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 293px 757px 1000px;
+  grid-template-rows: 293px 1628px; /* header, main */
 }
 
 /* --------------------- header --------------------------- */
@@ -90,11 +90,15 @@
   display: grid;
   grid-column: 1/-1;
   grid-row: 2/3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 757px 871px; /* cover, lots*/
 }
 
 /* --------------------- cover ---------------------------- */
 
 .cover {
+  grid-column: 1/-1;
+  grid-row: 1/2;
   position: relative;
   top: 0;
   right: 0;
@@ -205,4 +209,10 @@
   border: 1px solid white;
   box-shadow: none;
   padding: 11.5px 31px;
+}
+
+.lots {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background-color: rgb(255, 191, 113);
 }
