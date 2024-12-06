@@ -84,6 +84,11 @@
   border-bottom: 1px solid black;
 }
 
+.address p {
+  margin-left: 1px;
+  letter-spacing: 0em;
+}
+
 /* --------------------- main ----------------------------- */
 
 .main {
