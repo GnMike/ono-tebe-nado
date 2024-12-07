@@ -1,16 +1,21 @@
 .body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 293px 1628px; /* header, main */
+  grid-template-columns: 1100px;
+  grid-template-rows: 293px 2369px 366px; /* header, main, footer */
 }
 
 /* --------------------- header --------------------------- */
 
 .header {
-  display: grid;
-  grid-column: 1/-1;
+  grid-column: 1/2;
   grid-row: 1/2;
+  justify-self: center;  
+  align-self: center;
+  width: 1052px;
+  height: 105px;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 105px;
 }
 
 /* --------------------- header__menu --------------------- */
@@ -20,8 +25,9 @@
   grid-row: 1/2;
   justify-self: left;
   align-self: center;
+  margin-left: -24px;
   font-size: 18px;
-  letter-spacing: 0.01em; 
+  letter-spacing: 0.012em; 
 }
 
 .header__links-list {
@@ -49,25 +55,37 @@
 }
 
 /* --------------------- header__logo --------------------- */
- 
+
 .header__logo {
   grid-column: 2/3;
   grid-row: 1/2;
   justify-self: center;
-  align-self: center; 
+  align-self: center;
+  width: 135.5px;
+  height: 108.36px;
+  position: relative;
+  left: 1px;
+  top:0.5px;
+}
+
+.header__logo-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
 }
 
 .header__logo-image {
-  height: 104.65px;
+  width: 100%;
 }
 
 /* --------------------- header__address ------------------ */
+
 .header__address {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: left;
   align-self: center;
-  padding-left: 76px;
+  margin-left: 85px;
 }
 
 .address {
@@ -92,18 +110,22 @@
 /* --------------------- main ----------------------------- */
 
 .main {
-  display: grid;
-  grid-column: 1/-1;
+  grid-column: 1/2;
   grid-row: 2/3;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 757px 871px; /* cover, lots*/
+  display: grid;
+  grid-template-columns: 1100px;
+  grid-template-rows: 757px 871px 741px; /* cover, lots, about */
 }
 
 /* --------------------- cover ---------------------------- */
 
 .cover {
-  grid-column: 1/-1;
+  grid-column: 1/2;
   grid-row: 1/2;
+  justify-self: center;  
+  align-self: center;
+  width: 100%;
+  min-height: 757px;
   position: relative;
   top: 0;
   right: 0;
@@ -131,7 +153,7 @@
   width: 1000px;
   min-height: 355px;
   top: 158px;
-  left: 50px;
+  left: 51px;
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 0.6em;
@@ -195,7 +217,7 @@
   text-transform: uppercase;
   line-height: 28px; 
   color: white;
-  word-spacing: 19px;
+  word-spacing: 0.895em;
 }
 
 .whitespace {
@@ -208,37 +230,38 @@
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.004em;
+  letter-spacing: -0.004em;
   color: white;
   background: transparent;
   border: 1px solid white;
   box-shadow: none;
-  padding: 11.5px 31px;
+  padding: 11.2px 31.5px;
 }
 
 /* --------------------- lots ----------------------------- */
 
 .lots {
-  grid-column: 1/-1;
+  grid-column: 1/2;
   grid-row: 2/3;
-}
+  justify-self: center;  
+  align-self: self-end;
+  width: 1052px;
+  min-height: 692px;
+  }
 
 .lots__heading {
-  margin-top: 180px;
-  margin-bottom: 26px;
-  margin-left: 63px;
+  margin-left: 40px;
+  margin-bottom: 27px;
   font-size: 40px;
   font-weight: 700;
-  line-height: 46.96px;
-  text-align: left;
   text-transform: uppercase;
 }
 
 .lots__card-list {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 359px 359px 334px;
+  grid-template-rows: 563px;
   list-style-type: none;
-  flex-direction: row;
 }
 
 .lots__card-list-item {
@@ -308,7 +331,7 @@
 .lots__look-more-link {
   display: inline-block;
   margin-top: 30px;
-  margin-left: 64px;
+  margin-left: 40px;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
