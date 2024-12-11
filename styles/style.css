@@ -41,17 +41,17 @@
   list-style: circle outside;
 }
 
-.header__links-list-item_no-bullit:focus-within, :hover {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
 .header__link {
-  text-decoration: none;
-  border-bottom: 1px solid black;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.header__link_active:focus, :hover {
-  border-bottom: none;
+.header__link_active {
+  text-decoration: none;
 }
 
 /* --------------------- header__logo --------------------- */
