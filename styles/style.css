@@ -134,8 +134,8 @@
 
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
-  background-size: 124.7%;
-  background-position: -138px 0px;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -157,6 +157,7 @@
   font-weight: 700;
   line-height: 115px;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -204,25 +205,22 @@
   text-transform: uppercase;
   line-height: 28px;
   color: white;
-  word-spacing: 0.895em;
-}
-
-.whitespace {
-  letter-spacing: -0.1em;
+  word-spacing: 19px;
 }
 
 .bet-button {
   z-index: 2;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: -0.004em;
   color: white;
   background: transparent;
   border: 1px solid white;
   box-shadow: none;
   padding: 11.2px 31.5px;
+  cursor: pointer;
 }
 
 /* --------------------- lots ----------------------------- */
