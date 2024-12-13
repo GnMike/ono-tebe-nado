@@ -142,7 +142,6 @@
 
 .cover__title {
   color: white;
-  font-family: Raleway;
   font-size: 100px;
   font-weight: 700;
   line-height: 115px;
@@ -159,13 +158,14 @@
 .aligned-text_center {
   display: block;
   margin-top: 12px;
-  margin-left: 336px;
+  text-align: center;
 }
 
 .aligned-text_right {
   display: block;
   margin-top: 5px;
-  margin-left: 634px;
+  margin-right: 50px;
+  text-align: right;
 }
 
 .letter-spacing-extended {
