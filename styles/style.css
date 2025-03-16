@@ -119,7 +119,7 @@
   width: 100%;
   min-height: 757px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -259,7 +259,7 @@
   background-size: cover;
   background-position: center 0px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .card_type_film {
